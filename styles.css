@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.page-header {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto 15px auto;
+    flex-shrink: 0;
+}
+
+.page-wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 20px;
+    align-items: start;
+    flex: 1;
+    overflow: hidden;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+    height: 100%;
+    padding-right: 10px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-self: start;
+    overflow-y: auto;
+    height: 100%;
+    padding-right: 10px;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.section {
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.section h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #000;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+}
+
+.section .subtitle {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.section-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+.section-item {
+    padding: 12px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.section-item h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.section-item p {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.section-item a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.section-item a:hover {
+    text-decoration: underline;
+}
+
+.info-card {
+    padding: 15px;
+    background-color: #fafafa;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.info-card h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.info-item {
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+.info-item strong {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-links a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+    .page-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        order: -1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-content {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
