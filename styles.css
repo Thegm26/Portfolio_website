@@ -72,7 +72,7 @@ body::before {
 .overview-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(310px, 0.46fr); gap: 34px; align-items: stretch; }
 .hero { padding: 20px 0 26px; }
 .eyebrow, .label { margin: 0; color: var(--green); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.08em; }
-.eyebrow { margin-bottom: 8px; }
+.eyebrow { margin-bottom: 18px; }
 h1, h2, p { margin-top: 0; }
 h1 { margin-bottom: 20px; color: #efffe9; font-size: clamp(2.25rem, 6vw, 5rem); line-height: 0.98; letter-spacing: -0.07em; }
 .lead { max-width: 830px; margin-bottom: 19px; color: #c7d9c4; font-size: clamp(1.03rem, 2.1vw, 1.35rem); }
