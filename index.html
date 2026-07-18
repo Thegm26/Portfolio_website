@@ -43,10 +43,10 @@
                     </div>
                     <h2>Production experience</h2>
                     <div class="stack-categories">
-                        <p><strong>Backend & automation</strong>Java · Python · Groovy · Bash · REST / SOAP</p>
-                        <p><strong>Platform & cloud</strong>Azure · Kubernetes · OpenShift · Helm · Terraform · Docker</p>
-                        <p><strong>Delivery & operations</strong>GitHub Actions · CI/CD · production support</p>
-                        <p><strong>Data & observability</strong>PostgreSQL · Grafana · Prometheus</p>
+                        <p><strong>Backend & automation</strong>Java · Spring Boot · Quarkus · Python · Groovy · Bash</p>
+                        <p><strong>Platform & cloud</strong>Azure · Kubernetes / OpenShift · Helm · Terraform · Argo CD · Docker</p>
+                        <p><strong>Delivery & operations</strong>GitHub Actions · Jenkins · CI/CD · Grafana · Prometheus</p>
+                        <p><strong>Data & integration</strong>PostgreSQL · EDC · REST / SOAP</p>
                     </div>
                 </section>
             </div>
@@ -61,8 +61,8 @@
                     <article>
                         <p class="label">2022 — PRESENT</p>
                         <h2>Software Engineer / DevOps <span>@ Amadeus</span></h2>
-                        <p>Build PaaS solutions for major airlines and European data exchange. Improved deployment efficiency by 40% through CI/CD automation; deliver Azure migrations, tooling, and observability.</p>
-                        <p class="tech-line">Java · Python · Terraform · Azure · Kubernetes · CI/CD</p>
+                        <p>Build and operate high-throughput airline data and secure data-exchange platforms. Own Java microservices, CI/CD tooling, and operations across 100+ OpenShift namespaces; deliver EDC extensions, Argo CD workflows, and Azure infrastructure.</p>
+                        <p class="tech-line">Java · Spring Boot · Quarkus · Python · OpenShift · Argo CD</p>
                     </article>
                     <article>
                         <p class="label">2020 — 2022</p>
@@ -91,7 +91,9 @@
 
             const commands = [
                 'mvn -q test -DskipITs=false',
+                './mvnw verify -Dquarkus.profile=test',
                 'python -m pytest -q --cov',
+                'python tools/validate_charts.py --changed-only',
                 'groovy deploy.groovy --environment prod',
                 './scripts/release.sh --dry-run',
                 'cmake --build build --parallel',
@@ -99,11 +101,11 @@
                 'docker build -t platform-api .',
                 'kubectl rollout status deployment/api',
                 'helm upgrade --install platform ./chart',
+                'argocd app diff fast-data',
                 'terraform apply',
                 'az keyvault secret show --vault-name core',
                 'oc rollout status deployment/api',
                 'gh workflow run deploy.yml --ref main',
-                'grafana-cli plugins install grafana-piechart',
                 'promtool check rules alerts.yml'
             ];
             let command = 0;
