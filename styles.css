@@ -83,6 +83,12 @@ h1 { margin-bottom: 13px; color: #efffe9; font-size: clamp(2.25rem, 7vw, 5.8rem)
 .hero-meta { display: flex; justify-content: space-between; gap: 18px 20px; color: var(--muted); font-size: 0.8rem; }
 .base-focus { display: grid; gap: 3px; }
 .hero-meta span::before { content: "> "; color: var(--green-dark); }
+.hero-contact { display: grid; justify-items: end; gap: 3px; }
+.hero-contact .contact-label { color: var(--green); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.hero-contact .contact-label::before { content: ""; }
+.hero-contact nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px 16px; }
+.hero-contact a { color: var(--muted); font-weight: 800; text-decoration: none; }
+.hero-contact a:hover { color: var(--green); text-decoration: underline; }
 
 .rule { height: 1px; margin-bottom: 28px; background: repeating-linear-gradient(90deg, var(--line) 0 9px, transparent 9px 13px); }
 .panel { position: relative; margin-bottom: 22px; padding: 22px; border: 1px solid var(--line); background: var(--panel); }
@@ -119,6 +125,8 @@ footer { padding: 10px 0 0; color: var(--muted); font-size: 0.86rem; }
     .terminal-bar { padding: 0 11px; font-size: 0.67rem; }
     .terminal-body { padding: 24px 17px; }
     .hero-meta { align-items: flex-start; flex-direction: column; gap: 8px; }
+    .hero-contact { justify-items: start; }
+    .hero-contact nav { justify-content: flex-start; }
     .experience-grid, .stack-grid { grid-template-columns: 1fr; }
     .experience-grid article { min-height: 0; }
     .panel { padding: 16px; }
