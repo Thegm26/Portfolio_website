@@ -87,7 +87,7 @@ h1 { margin-bottom: 20px; color: #efffe9; font-size: clamp(2.25rem, 6vw, 5rem); 
 .stack-sidebar .stack-categories { grid-template-columns: 1fr; gap: 12px; margin-top: 0; }
 .stack-sidebar .stack-categories p { margin-bottom: 0; color: #b9cbb7; font-size: 0.78rem; }
 
-.rule { height: 1px; margin-bottom: 28px; background: repeating-linear-gradient(90deg, var(--line) 0 9px, transparent 9px 13px); }
+.rule { height: 1px; margin: 22px 0 28px; background: repeating-linear-gradient(90deg, var(--line) 0 9px, transparent 9px 13px); }
 .panel { position: relative; margin-bottom: 22px; padding: 22px; border: 1px solid var(--line); background: var(--panel); }
 .panel-heading { display: flex; align-items: baseline; gap: 18px; margin-bottom: 17px; padding-bottom: 13px; border-bottom: 1px dashed var(--line); }
 .panel > p { max-width: 930px; margin-bottom: 0; }
