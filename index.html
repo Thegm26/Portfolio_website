@@ -1,137 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>George Michalakis Portfolio</title>
+    <meta name="description" content="George Michalakis — software engineer working across backend systems, cloud platforms, and delivery automation.">
+    <title>George Michalakis | Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="page-header">
-        <h1>George Michalakis</h1>
-        <p class="subtitle">Software Engineer | DevOps & Cloud Engineering</p>
-    </header>
+    <main class="terminal" aria-label="George Michalakis portfolio">
+        <header class="terminal-bar">
+            <span class="window-controls" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>george@engineering: ~/portfolio</span>
+            <span class="bar-status">SYSTEM: ONLINE</span>
+        </header>
 
-    <div class="page-wrapper">
-        <!-- Main Content Area -->
-        <div class="main-content">
-            <!--Personal Projects Section -->
-            <section class="section">
-                <h2>Personal Projects (What I'm working on my free time)</h2>
-                <p class="subtitle">Lot's of random stuff here</p>
-                <div class="section-content">
-                    <div class="section-item">
-                        <h3>Project Title 1</h3>
-                        <p>Description of your project and technologies.</p>
-                        <a href="https://github.com/yourusername/project1" target="_blank">View →</a>
-                    </div>
+        <div class="terminal-body">
+            <p class="command"><span class="prompt">george@engineering:~$</span> ./portfolio --overview</p>
 
-                    <div class="section-item">
-                        <h3>Project Title 2</h3>
-                        <p>Another project showcasing your work.</p>
-                        <a href="https://github.com/yourusername/project2" target="_blank">View →</a>
-                    </div>
-
-                    <div class="section-item">
-                        <h3>Project Title 3</h3>
-                        <p>Description of another project.</p>
-                        <a href="https://github.com/yourusername/project3" target="_blank">View →</a>
-                    </div>
+            <section class="hero" aria-labelledby="name">
+                <p class="eyebrow">[ SOFTWARE ENGINEER / BACKEND + PLATFORM ]</p>
+                <h1 id="name">George Michalakis<span class="cursor" aria-hidden="true">_</span></h1>
+                <p class="lead">I build and operate dependable software systems: backend services, cloud platforms, integration workflows, and delivery automation.</p>
+                <div class="hero-meta">
+                    <span>base: Nice, France</span>
+                    <span>focus: Java · systems design · cloud engineering</span>
+                    <span>languages: Greek / English / German / French</span>
                 </div>
             </section>
 
-            <!-- Business Project Section -->
-            <section class="section">
-                <h2>Business Projects (What I'm working / have worked on my paid time)</h2>
-                <p class="subtitle">Of course without the spicy / confidential details</p>
-                <div class="section-content">
-                    <div class="section-item">
-                        <h3>Competition Name</h3>
-                        <p>Achievement or placement details.</p>
-                        <a href="#" target="_blank">Details →</a>
-                    </div>
+            <div class="rule" aria-hidden="true"></div>
 
-                    <div class="section-item">
-                        <h3>Hackathon Event</h3>
-                        <p>What you built or achieved.</p>
-                        <a href="#" target="_blank">Details →</a>
-                    </div>
+            <section class="panel" id="about">
+                <div class="panel-heading">
+                    <p class="command"><span class="prompt">$</span> cat about.txt</p>
+                    <span class="panel-index">01</span>
+                </div>
+                <p>Software engineer with enterprise experience in platform engineering, software integration, CI/CD, cloud migration, and production operations. I work across the line between application delivery and the infrastructure that keeps it reliable.</p>
+                <p>My current direction is Java-first backend and systems depth, supported by Python for automation and C++ for performance and low-level systems thinking.</p>
+            </section>
 
-                    <div class="section-item">
-                        <h3>Challenge/Award</h3>
-                        <p>Description of achievement.</p>
-                        <a href="#" target="_blank">Details →</a>
-                    </div>
+            <section class="panel" id="experience">
+                <div class="panel-heading">
+                    <p class="command"><span class="prompt">$</span> ls -la experience/</p>
+                    <span class="panel-index">02</span>
+                </div>
+                <div class="experience-grid">
+                    <article>
+                        <p class="label">2022 — PRESENT</p>
+                        <h2>Software Engineer / DevOps <span>@ Amadeus</span></h2>
+                        <p>Platform solutions, CI/CD automation, infrastructure tooling, observability, secure cloud configuration, and Azure migration work for enterprise airline systems.</p>
+                    </article>
+                    <article>
+                        <p class="label">2020 — 2022</p>
+                        <h2>Software Integration Engineer <span>@ Netcompany — INTRASOFT</span></h2>
+                        <p>Java integration work, SOAP/REST services, Oracle Fusion Middleware, and production support for telecom systems.</p>
+                    </article>
+                    <article>
+                        <p class="label">2019 — 2022</p>
+                        <h2>Software / VR-AR Engineer <span>@ University of Patras</span></h2>
+                        <p>Research software for simulation, AR rendering, and REST integration across EU projects; IEEE VR 3DUI finalist, 2020–2022.</p>
+                    </article>
                 </div>
             </section>
 
-            <!-- Articles Section -->
-            <section class="section">
-                <h2>Articles (What I'm interested in)</h2>
-                <p class="subtitle">From random DS topics and outages to how grappling chokes work</p>
-                <div class="section-content">
-                    <div class="section-item">
-                        <h3>Article Title 1</h3>
-                        <p>What the article covers and key topics.</p>
-                        <a href="#" target="_blank">Read →</a>
-                    </div>
-
-                    <div class="section-item">
-                        <h3>Article Title 2</h3>
-                        <p>Summary of another article.</p>
-                        <a href="#" target="_blank">Read →</a>
-                    </div>
-
-                    <div class="section-item">
-                        <h3>Article Title 3</h3>
-                        <p>Brief description of this article.</p>
-                        <a href="#" target="_blank">Read →</a>
-                    </div>
+            <section class="panel" id="stack">
+                <div class="panel-heading">
+                    <p class="command"><span class="prompt">$</span> printenv ENGINEERING_STACK</p>
+                    <span class="panel-index">03</span>
+                </div>
+                <div class="stack-grid">
+                    <article>
+                        <h2>Production experience</h2>
+                        <p>Java · Python · Groovy · Bash · PostgreSQL · REST / SOAP · GitHub Actions · Terraform · Docker · Kubernetes · Helm · Azure · OpenShift · Grafana · Prometheus</p>
+                    </article>
+                    <article>
+                        <h2>Currently deepening</h2>
+                        <p>Java backend design · testing · concurrency · distributed systems · operating systems · modern C++ · Python performance and async</p>
+                    </article>
                 </div>
             </section>
+
+            <footer>
+                <p><span class="prompt">$</span> contact --open</p>
+                <nav aria-label="Contact links">
+                    <a href="mailto:geomichalakis26@gmail.com">geomichalakis26@gmail.com</a>
+                    <a href="https://github.com/Thegm26" target="_blank" rel="noreferrer">github.com/Thegm26 ↗</a>
+                </nav>
+                <p class="footnote">Last updated: July 2026 · Built as a static site.</p>
+            </footer>
         </div>
-
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="info-card">
-                <h2>About</h2>
-                <div class="info-item">
-                    <strong>Location</strong>
-                    City, Country
-                </div>
-                <div class="info-item">
-                    <strong>Email</strong>
-                    your.email@example.com
-                </div>
-                <div class="info-item">
-                    <strong>Experience</strong>
-                    X years
-                </div>
-            </div>
-
-            <div class="info-card">
-                <h2>Skills</h2>
-                <div class="skills-list">
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">TypeScript</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">Docker</span>
-                </div>
-            </div>
-
-            <div class="info-card">
-                <h2>Connect</h2>
-                <div class="contact-links">
-                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                    <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
-                </div>
-            </div>
-        </aside>
-    </div>
+    </main>
 </body>
 </html>
