@@ -8,68 +8,86 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="terminal">
+    <main class="terminal" aria-label="George Michalakis portfolio">
         <header class="terminal-bar">
             <span class="window-controls" aria-hidden="true"><i></i><i></i><i></i></span>
-            <p>GEORGE MICHALAKIS / PORTFOLIO</p>
-            <a href="mailto:georgios.michalakis26@gmail.com">CONTACT ↗</a>
+            <span>George Michalakis / Portfolio</span>
+            <span class="bar-status">Available for new work</span>
         </header>
 
-        <main id="top">
-            <section class="hero panel">
-                <p class="label">PROFILE</p>
-                <h1>George<br>Michalakis<span>_</span></h1>
-                <p>I build and operate reliable backend, cloud, and integration systems.</p>
-                <div class="hero-footer">
-                    <span>NICE, FRANCE</span>
-                    <a href="https://github.com/Thegm26" target="_blank" rel="noreferrer">GITHUB ↗</a>
+        <div class="terminal-body">
+            <section class="hero" aria-labelledby="name">
+                <p class="eyebrow">Software Engineer / Backend + Platform</p>
+                <h1 id="name">George Michalakis<span class="cursor" aria-hidden="true">_</span></h1>
+                <p class="lead">I build and operate dependable software systems: backend services, cloud platforms, integration workflows, and delivery automation.</p>
+                <div class="hero-meta">
+                    <span>Nice, France</span>
+                    <span>Java · systems design · cloud engineering</span>
+                    <span>Greek · English · German · French</span>
                 </div>
             </section>
 
-            <section class="about panel">
-                <p class="label">ABOUT</p>
-                <p>Enterprise software engineer with experience in platform engineering, CI/CD, cloud migration, integration, and production operations.</p>
-                <div class="focus">JAVA · CLOUD · SYSTEMS</div>
+            <div class="rule" aria-hidden="true"></div>
+
+            <section class="panel" id="about">
+                <div class="panel-heading">
+                    <p class="section-title">About</p>
+                    <span class="panel-index">01</span>
+                </div>
+                <p>Software engineer with enterprise experience in platform engineering, software integration, CI/CD, cloud migration, and production operations. I work across the line between application delivery and the infrastructure that keeps it reliable.</p>
+                <p>My current direction is Java-first backend and systems depth, supported by Python for automation and C++ for performance and low-level systems thinking.</p>
             </section>
 
-            <section class="experience panel">
-                <p class="label">EXPERIENCE</p>
-                <div class="role-grid">
+            <section class="panel" id="experience">
+                <div class="panel-heading">
+                    <p class="section-title">Experience</p>
+                    <span class="panel-index">02</span>
+                </div>
+                <div class="experience-grid">
                     <article>
-                        <p class="date">2022 — PRESENT</p>
-                        <h2>Amadeus</h2>
-                        <p>Software Engineer / DevOps</p>
+                        <p class="label">2022 — Present</p>
+                        <h2>Software Engineer / DevOps <span>Amadeus</span></h2>
+                        <p>Platform solutions, CI/CD automation, infrastructure tooling, observability, secure cloud configuration, and Azure migration work for enterprise airline systems.</p>
                     </article>
                     <article>
-                        <p class="date">2020 — 2022</p>
-                        <h2>Netcompany<br>INTRASOFT</h2>
-                        <p>Software Integration Engineer</p>
+                        <p class="label">2020 — 2022</p>
+                        <h2>Software Integration Engineer <span>Netcompany — INTRASOFT</span></h2>
+                        <p>Java integration work, SOAP/REST services, Oracle Fusion Middleware, and production support for telecom systems.</p>
                     </article>
                     <article>
-                        <p class="date">2019 — 2022</p>
-                        <h2>University<br>of Patras</h2>
-                        <p>Software / VR-AR Engineer</p>
+                        <p class="label">2019 — 2022</p>
+                        <h2>Software / VR-AR Engineer <span>University of Patras</span></h2>
+                        <p>Research software for simulation, AR rendering, and REST integration across EU projects; IEEE VR 3DUI finalist, 2020–2022.</p>
                     </article>
                 </div>
             </section>
 
-            <section class="stack panel">
-                <p class="label">ENGINEERING STACK</p>
-                <div>
-                    <h2>PRODUCTION</h2>
-                    <p>Java · Python · Terraform · Docker · Kubernetes · Azure · CI/CD</p>
+            <section class="panel" id="stack">
+                <div class="panel-heading">
+                    <p class="section-title">Engineering Stack</p>
+                    <span class="panel-index">03</span>
                 </div>
-                <div>
-                    <h2>DEEPENING</h2>
-                    <p>Backend design · concurrency · distributed systems · C++</p>
+                <div class="stack-grid">
+                    <article>
+                        <h2>Production experience</h2>
+                        <p>Java · Python · Groovy · Bash · PostgreSQL · REST / SOAP · GitHub Actions · Terraform · Docker · Kubernetes · Helm · Azure · OpenShift · Grafana · Prometheus</p>
+                    </article>
+                    <article>
+                        <h2>Currently deepening</h2>
+                        <p>Java backend design · testing · concurrency · distributed systems · operating systems · modern C++ · Python performance and async</p>
+                    </article>
                 </div>
             </section>
-        </main>
 
-        <footer>
-            <span>GEORGE MICHALAKIS</span>
-            <a href="mailto:georgios.michalakis26@gmail.com">georgios.michalakis26@gmail.com</a>
-        </footer>
-    </div>
+            <footer>
+                <p class="contact-title">Contact</p>
+                <nav aria-label="Contact links">
+                    <a href="mailto:georgios.michalakis26@gmail.com">georgios.michalakis26@gmail.com</a>
+                    <a href="https://github.com/Thegm26" target="_blank" rel="noreferrer">github.com/Thegm26 ↗</a>
+                </nav>
+                <p class="footnote">Updated July 2026 · Built as a static site.</p>
+            </footer>
+        </div>
+    </main>
 </body>
 </html>
