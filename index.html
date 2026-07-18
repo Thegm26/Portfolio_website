@@ -101,9 +101,20 @@
 
             const commands = [
                 'java --version',
+                'python --version',
+                'groovy --version',
+                'bash --version',
+                'mvn test',
+                'psql --version',
+                'docker compose up --detach',
                 'kubectl get pods --all-namespaces',
+                'helm upgrade --install platform ./chart',
                 'terraform apply',
-                'mvn test'
+                'az account show',
+                'oc get projects',
+                'gh workflow run deploy.yml',
+                'grafana-cli plugins ls',
+                'promtool check config prometheus.yml'
             ];
             let command = 0;
             let characters = 0;
