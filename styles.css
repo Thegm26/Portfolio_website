@@ -15,7 +15,6 @@ html { background: var(--screen); }
 
 body {
     margin: 0;
-    min-width: 320px;
     color: var(--ink);
     background:
         linear-gradient(rgba(168, 255, 96, 0.025) 1px, transparent 1px),
@@ -62,7 +61,7 @@ body::before {
 .window-controls i:nth-child(2) { background: var(--warning); }
 .window-controls i:nth-child(3) { background: #fa7373; }
 .top-links { display: flex; gap: 18px; margin-left: auto; }
-.top-links a { padding: 2px 0; border-bottom: 1px solid rgba(16, 26, 18, 0.38); color: #101a12; line-height: 1.2; text-decoration: none; }
+.top-links a { padding: 2px 0; border-bottom: 1px solid transparent; color: #101a12; line-height: 1.2; text-decoration: none; }
 .top-links a:hover { border-color: #315338; color: #315338; }
 
 .terminal-body { padding: clamp(22px, 4vw, 52px); }
@@ -145,6 +144,28 @@ footer { padding: 10px 0 0; color: var(--muted); font-size: 0.86rem; }
     .footnote { margin-top: 14px; }
 }
 
+@media (min-width: 921px) and (max-height: 980px) {
+    .terminal { margin: 12px auto; }
+    .terminal-body { padding-top: 28px; padding-bottom: 14px; }
+    .rule { margin: 12px 0 18px; }
+    .panel { margin-bottom: 12px; }
+    footer { display: none; }
+}
+
+@media (min-width: 921px) and (max-height: 880px) {
+    .terminal-body { padding: 24px 44px 10px; }
+    .hero { padding: 6px 0 10px; }
+    .eyebrow { margin-bottom: 10px; }
+    .stack-sidebar { padding: 14px; }
+    .stack-sidebar .panel-heading { margin-bottom: 8px; padding-bottom: 8px; }
+    .stack-sidebar h2 { margin-bottom: 8px; }
+    .stack-sidebar .stack-categories { gap: 9px; }
+    .rule { margin: 10px 0 12px; }
+    .panel { padding: 14px; margin-bottom: 4px; }
+    .panel-heading { margin-bottom: 10px; padding-bottom: 8px; }
+    .experience-grid .tech-line { padding-top: 8px; }
+}
+
 @media (min-width: 921px) and (max-height: 820px) {
     .terminal { margin: 12px auto; }
     .terminal-body { padding: 24px 32px 16px; }
@@ -166,6 +187,11 @@ footer { padding: 10px 0 0; color: var(--muted); font-size: 0.86rem; }
     .experience-grid p:not(.label) { font-size: 0.78rem; line-height: 1.45; }
     .experience-grid .tech-line { padding-top: 8px; font-size: 0.66rem; }
     footer { display: none; }
+}
+
+@media (min-width: 921px) and (max-height: 750px) {
+    .terminal { margin: 4px auto; }
+    .terminal-body { padding-top: 16px; padding-bottom: 8px; }
 }
 
 @media (max-width: 760px) {
